@@ -1,0 +1,33 @@
+# Settings for the Liferay Forums docs.
+app_name: Liferay Forums
+description: Documentation for Liferay Forums, discussion forums for Liferay DXP.
+baseurl: /liferay-forums
+footer_note: Liferay Forums is available under Liferay's dual license, LGPL-2.1-or-later or the Liferay DXP EULA. Copyright &copy; 2026 Liferay, Inc.
+og_image: /assets/kb/liferay-forums-home.png
+
+# Where the docs sit in the knowledge base (as in the main site's data/apps.json).
+category_id: marketplace-apps
+category_name: Marketplace apps
+
+url: https://liferay-community-apac.github.io
+lang: en
+# The main site the header, footer, styles and search come from. Leave it empty on the live site;
+# set it to the full address (https://liferay-community-apac.github.io) to preview the docs on their own.
+main_site: ""
+
+plugins:
+  - jekyll-sitemap      # writes sitemap.xml; the main site lists it in robots.txt via data/apps.json
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]
