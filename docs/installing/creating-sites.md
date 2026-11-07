@@ -39,11 +39,28 @@ Before you add sites, see [Running Several Forum Sites](../administering/several
 
 You copy the forum's site initializer project once for each site, and give each copy names of its own.
 
-1. Download **Source code (zip)** from the [release](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases/tag/v1.0.0), and unzip it.
+1. Download the release's source code, [lfrgs-liferay-forums-1.0.0.zip](https://github.com/LGSAPAC/lfrgs-liferay-forums/archive/refs/tags/v1.0.0.zip), and unzip it. On the [release page](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases/tag/v1.0.0), it's **Source code (zip)**, the last of the **Assets**. It unzips to a folder named `lfrgs-liferay-forums-1.0.0`; run the commands below from there.
 
-1. Copy `client-extensions/liferay-forums-site-initializer` to a name of its own in the same folder, for example `client-extensions/liferay-forums-site-initializer-acme`. On Liferay PaaS, copy it into `liferay/client-extensions` in your PaaS project's repository instead.
+1. Copy the whole `client-extensions/liferay-forums-site-initializer` folder, with everything in it, to a new folder next to it, named for the site. For a site named *Acme*:
 
-1. In the copy, replace `client-extension.yaml` with one that names the new site. Every name in it must be unique to the copy: the two keys, the OAuth application, and the site's external reference code. For a site named *Acme*:
+    ```bash
+    cp -r client-extensions/liferay-forums-site-initializer client-extensions/liferay-forums-site-initializer-acme
+    ```
+
+    On Liferay PaaS, copy it into `liferay/client-extensions` in your PaaS project's repository instead, as `liferay/client-extensions/liferay-forums-site-initializer-acme`.
+
+    You then have two folders side by side. Leave the original as it is; only the copy changes:
+
+    ```
+    client-extensions/
+    ├── liferay-forums-site-initializer/
+    └── liferay-forums-site-initializer-acme/
+        ├── build.gradle
+        ├── client-extension.yaml    ← the only file you change
+        └── site-initializer/
+    ```
+
+1. In the copy, open `client-extension.yaml`, and replace all of its contents with names for the new site. Every name in it must be unique to the copy: the two keys, the OAuth application, and the site's external reference code. For a site named *Acme*:
 
     ```yaml
     liferay-forums-site-initializer-acme:
