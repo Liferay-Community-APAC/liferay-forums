@@ -34,4 +34,4 @@ A topic keeps its place in **Recent Activity** after its latest reply is deleted
 
 ## Related Information
 
-- [Release notes](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases)
+- [Release notes](https://github.com/Liferay-Community-APAC/liferay-forums/releases)

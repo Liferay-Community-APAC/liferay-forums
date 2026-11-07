@@ -10,7 +10,7 @@ nav_order: 2
 Liferay and PostgreSQL run in containers, and the forum's microservice runs in a third container that shares Liferay's network, so Liferay reaches it at `localhost:58081` as on a server. You copy the forum's zips into the running Liferay container, in the same order as on a server. These steps were tested with the `liferay/dxp:2026.q1.4-lts` image.
 
 {: .important }
-You need Docker. Run the commands from a folder that holds the release's three zips, downloaded from the [release](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases/tag/v1.0.0).
+You need Docker. Run the commands from a folder that holds the release's three zips, downloaded from the [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0).
 
 1. TOC
 {:toc}

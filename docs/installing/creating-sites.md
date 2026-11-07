@@ -39,7 +39,7 @@ Before you add sites, see [Running Several Forum Sites](../administering/several
 
 You copy the forum's site initializer project once for each site, and give each copy names of its own.
 
-1. Download the release's source code, [lfrgs-liferay-forums-1.0.0.zip](https://github.com/LGSAPAC/lfrgs-liferay-forums/archive/refs/tags/v1.0.0.zip), and unzip it. On the [release page](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases/tag/v1.0.0), it's **Source code (zip)**, the last of the **Assets**. It unzips to a folder named `lfrgs-liferay-forums-1.0.0`; run the commands below from there.
+1. Download the forum's source code, [liferay-forums-1.0.0-source.zip](https://github.com/Liferay-Community-APAC/liferay-forums/releases/download/v1.0.0/liferay-forums-1.0.0-source.zip), from the [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0), and unzip it. It unzips to a folder named `liferay-forums-1.0.0`; run the commands below from there.
 
 1. Copy the whole `client-extensions/liferay-forums-site-initializer` folder, with everything in it, to a new folder next to it, named for the site. For a site named *Acme*:
 
@@ -102,7 +102,7 @@ Then check each new site at its address, and post a reply there.
 
 ### A Shortcut on Liferay Self-Hosted
 
-On Liferay Self-Hosted (Tomcat or Docker), the `generate-site-initializer-zips.sh` script, in the release's **Source code** download, makes the copies from `liferay-forums-site-initializer.zip` without building them. It runs on Linux, with Bash, `unzip`, and `zip`. Don't use its zips on Liferay PaaS or SaaS: they all share one OAuth application, which works only when they're deployed to Liferay itself.
+On Liferay Self-Hosted (Tomcat or Docker), the `generate-site-initializer-zips.sh` script, attached to the [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0), makes the copies from `liferay-forums-site-initializer.zip` without building them. It runs on Linux, with Bash, `unzip`, and `zip`. Don't use its zips on Liferay PaaS or SaaS: they all share one OAuth application, which works only when they're deployed to Liferay itself.
 
 1. Put the script in a folder with `liferay-forums-site-initializer.zip`.
 
@@ -115,7 +115,7 @@ On Liferay Self-Hosted (Tomcat or Docker), the `generate-site-initializer-zips.s
     )
     ```
 
-1. Run it. It writes one zip per site to the `out` folder:
+1. Run it. It writes one zip per site to the `out` folder. For its options, run it with `--help`:
 
     ```bash
     bash generate-site-initializer-zips.sh
@@ -129,4 +129,3 @@ A site named *Acme, Inc. site* is served at `/web/acme-inc.-site`. To use anothe
 
 - [Checking the Installation](checking.html)
 - [Running Several Forum Sites](../administering/several-sites.html)
-- [Option 2: Several Sites](https://github.com/LGSAPAC/lfrgs-liferay-forums#option-2-several-sites) in the README, with all the script's options

@@ -29,7 +29,7 @@ On Liferay SaaS, Liferay manages the Liferay version and its hotfixes, for every
 
 1. Find the ID of the extension environment to deploy to, in the form `<project>-<environment>`. The Liferay Cloud console shows it.
 
-1. From the [release](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases/tag/v1.0.0), download:
+1. From the [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0), download:
 
     - `liferay-forums-batch.zip`
     - `liferay-forums-etc-spring-boot.zip`

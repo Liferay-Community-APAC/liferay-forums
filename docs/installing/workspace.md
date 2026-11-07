@@ -19,7 +19,7 @@ Tested with the Liferay Workspace Gradle plugin 15.0.0 and Liferay DXP 2026.Q1.4
 
 ## Step 1: Add the Forum's Projects
 
-1. Download the release's source code, [lfrgs-liferay-forums-1.0.0.zip](https://github.com/LGSAPAC/lfrgs-liferay-forums/archive/refs/tags/v1.0.0.zip), and unzip it. On the [release page](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases/tag/v1.0.0), it's **Source code (zip)**, the last of the **Assets**. It unzips to a folder named `lfrgs-liferay-forums-1.0.0`.
+1. Download the forum's source code, [liferay-forums-1.0.0-source.zip](https://github.com/Liferay-Community-APAC/liferay-forums/releases/download/v1.0.0/liferay-forums-1.0.0-source.zip), from the [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0), and unzip it. It unzips to a folder named `liferay-forums-1.0.0`.
 
 1. Copy these three folders into your workspace's `client-extensions` folder:
 

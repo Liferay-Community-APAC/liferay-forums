@@ -40,14 +40,16 @@ Liferay Forums 1.0.0 was tested on 2026.Q1.1 and 2026.Q1.4.
 
 ## What You'll Install
 
-Each [release](https://github.com/LGSAPAC/lfrgs-liferay-forums/releases) has three zips, and its **Source code** download has a script:
+Each [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases) has these files:
 
 | File | What It Is |
 | --- | --- |
 | `liferay-forums-batch.zip` | The forum's data: topics, replies, votes, reports, and follows, plus its notification templates and search settings. |
 | `liferay-forums-etc-spring-boot.zip` | The forum's **microservice**, a small program that runs next to Liferay. It checks every post for bans and locked topics, and sends notifications. Liferay needs its zip, and the microservice itself runs as its own process or container. |
 | `liferay-forums-site-initializer.zip` | The forum site itself: its pages, roles, and permissions. Deploying it creates one forum site. |
-| `scripts/generate-site-initializer-zips.sh` | On Liferay Self-Hosted, makes one copy of the site initializer zip per site, to run several forum sites. |
+| `generate-site-initializer-zips.sh` | On Liferay Self-Hosted, makes one copy of the site initializer zip per site, to run several forum sites. |
+| `liferay-forums-1.0.0-source.zip` | The source of the three zips, as a Liferay Workspace. You need it on Liferay PaaS, to build a site initializer for each additional forum site, or to add the forum to your own Liferay Workspace. |
+| `SHA256SUMS` | Checksums of the files above. |
 
 ## Choose Where Liferay Runs
 
@@ -73,4 +75,3 @@ The forum is installed in a fixed order: the batch, then the microservice, then 
 
 - [Getting Started](../getting-started.html)
 - [Deleting a Forum Site](deleting.html)
-- The [README](https://github.com/LGSAPAC/lfrgs-liferay-forums#readme), with every detail of the installation
