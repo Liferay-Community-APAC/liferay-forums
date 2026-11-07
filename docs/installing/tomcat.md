@@ -17,7 +17,7 @@ You need file access to the Liferay server, the [required Liferay fixes](./#requ
 
 ## Step 1: Download the Release
 
-From the [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0), download:
+From the [release](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads/1.0.0), download:
 
 - `liferay-forums-batch.zip`
 - `liferay-forums-etc-spring-boot.zip`

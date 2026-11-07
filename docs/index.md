@@ -35,6 +35,6 @@ Modern discussion forums for Liferay DXP. Members ask questions, share answers, 
 
 | Liferay Forums | Liferay DXP |
 | --- | --- |
-| [1.0.0](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0) | 2026.Q1 LTS, with the [required Liferay fixes](installing/#required-liferay-fixes). Tested on 2026.Q1.1 and 2026.Q1.4. |
+| [1.0.0](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads/1.0.0) | 2026.Q1 LTS, with the [required Liferay fixes](installing/#required-liferay-fixes). Tested on 2026.Q1.1 and 2026.Q1.4. |
 
-To install Liferay Forums, follow [Installing](installing/). Download the release files from [GitHub Releases](https://github.com/Liferay-Community-APAC/liferay-forums/releases).
+To install Liferay Forums, follow [Installing](installing/). Download the release files from [Downloads](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads/1.0.0).

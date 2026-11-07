@@ -40,7 +40,7 @@ Liferay Forums 1.0.0 was tested on 2026.Q1.1 and 2026.Q1.4.
 
 ## What You'll Install
 
-Each [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases) has these files:
+Each [release](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads) has these files:
 
 | File | What It Is |
 | --- | --- |
