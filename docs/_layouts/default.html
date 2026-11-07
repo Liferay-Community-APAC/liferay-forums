@@ -7,6 +7,7 @@
     nav_order:  its position (lower first)
     parent:     the title of its section page, for pages inside a section
     nav_exclude: true to leave a page out of the sidebar
+    search_exclude: true to leave a page out of the site search
 {%- endcomment -%}
 {%- assign main = site.main_site | default: "" -%}
 {%- assign docs_pages = site.pages | where_exp: "p", "p.title" | where_exp: "p", "p.nav_exclude != true" -%}
@@ -24,7 +25,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% unless is_home %}{{ page.title }} · {% endunless %}{{ site.app_name }} · Liferay Community APAC</title>
-  {%- assign desc = page.description | default: site.description %}
+  {%- comment -%} Each page's own description: its front matter, or else its first plain paragraph. {%- endcomment -%}
+  {%- assign first_p = content | split: '<p>' | slice: 1, 1 | first | split: '</p>' | first | strip_html | normalize_whitespace | truncate: 160 -%}
+  {%- assign desc = page.description | default: first_p | default: site.description %}
   <meta name="description" content="{{ desc | escape }}">
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:title" content="{% unless is_home %}{{ page.title }} · {% endunless %}{{ site.app_name }}">
@@ -47,7 +50,7 @@
 
 <header class="site-header" data-site-header>
   <div class="wrap">
-    <a class="brand" href="{{ main }}/"><img class="brand-logo" src="{{ main }}/assets/liferay-logo-reversed.png" alt="Liferay" width="102" height="28"><small>User Group APAC</small></a>
+    <a class="brand" href="{{ main }}/"><img class="brand-logo" src="{{ main }}/assets/liferay-logo-reversed.png" alt="Liferay" width="102" height="28"><small>Community APAC</small></a>
   </div>
 </header>
 
@@ -78,7 +81,7 @@
       {%- if is_home %}{{ site.app_name }}{% else %}<a href="{{ '/' | relative_url }}">{{ site.app_name }}</a>{% endif -%}
       {%- if page.parent %}{% assign par = tops | where: "title", page.parent | first %}{% if par %}<span>/</span><a href="{{ par.url | relative_url }}">{{ par.title }}</a>{% endif %}{% endif %}
     </p>
-    <article class="prose" data-pagefind-body>
+    <article class="prose"{% unless page.search_exclude %} data-pagefind-body{% endunless %}>
       {{ content }}
     </article>
 
