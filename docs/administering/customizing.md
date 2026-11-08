@@ -25,6 +25,10 @@ The forum is an ordinary Liferay site, built with fragments, so you can change i
 {: .note }
 After you change a style book and click **Publish**, Liferay asks you to confirm in a **Publishing Info** dialog. Click its **Publish** too: until then, your changes stay in a draft and the site doesn't change.
 
+![The Forums style book: the four brand colors are outlined.](../assets/images/style-book.png){: .screenshot }
+
+![The Publishing Info dialog, with its Publish button outlined.](../assets/images/style-book-publish.png){: .screenshot }
+
 ## Matching Your Company's Look
 
 The style book only changes a few colors, and the **Forums Footer** fragment shows a fixed line of text. To give the forum your company's header, colors, and footer, add your own styles and footer to the **Forums** master page. Every forum page uses it, so you do it once per forum site.
@@ -33,7 +37,9 @@ The style book only changes a few colors, and the **Forums Footer** fragment sho
 
 1. From *Fragments and Widgets* → *Basic Components*, drag an **HTML** fragment onto the master page, below the content area, next to the **Forums Footer** fragment.
 
-1. Select the HTML fragment, and replace its content with a `<style>` block and your footer. For example, a light header with an indigo highlight for the current page, and a footer with your links:
+    ![The Forums master page with the HTML fragment outlined in Basic Components, a company footer added below the content area, and Publish Master outlined.](../assets/images/master-html.png){: .screenshot }
+
+1. Double-click the HTML fragment to edit its code, and replace its content with a `<style>` block and your footer. For example, a light header with an indigo highlight for the current page, and a footer with your links:
 
     ```html
     <style>
@@ -55,7 +61,9 @@ The style book only changes a few colors, and the **Forums Footer** fragment sho
     </footer>
     ```
 
-    The last rule hides the **Forums Footer** fragment. You can delete that fragment from the master page instead.
+    The last rule hides the **Forums Footer** fragment. You can delete that fragment from the master page instead. Click **Save**: the editor shows a preview of your footer next to the code.
+
+    ![The HTML fragment's Edit Content window, with the styles on the left and a preview of the footer on the right.](../assets/images/master-html-code.png){: .screenshot }
 
 1. Click **Publish Master**.
 

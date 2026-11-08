@@ -9,9 +9,13 @@ nav_order: 2
 Liferay Forums emails members about replies to topics they follow and about mentions. Before it can send them, set the addresses they're sent from.
 
 1. In *Applications* → *Notification Templates*, open **C2M0 Notification Email Reply** and set:
-   - **From**: an address of a domain your site owns, for example `forums@example.com`;
-   - **From Name**: the name members see, for example *Example Community*;
-   - **To**: an address you own. Members are always added in BCC, so **To** only gets a copy.
+   - under **Sender**, **Email Address**: an address of a domain your site owns, for example `forums@example.com`;
+   - under **Sender**, **Name**: the name members see, for example *Example Community*;
+   - under **Primary Recipients**, **Recipients**: an address you own. Members are always added in BCC, so this address only gets a copy.
+
+    Then click **Save**.
+
+    ![The notification template settings: the sender Email Address and Name, and the primary Recipients, are outlined.](../assets/images/email-template.png){: .screenshot }
 
 1. Do the same for **C2M0 Notification Email Mention**.
 

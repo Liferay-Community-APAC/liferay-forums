@@ -30,11 +30,21 @@ The forum's header lists the forum site's own pages, so members who open the for
 
 1. In the forum site, go to *Site Builder* → *Navigation Menus*, and add a menu, for example **Main**. In its settings, mark it as **Primary Navigation**.
 
+    ![Navigation Menus: the menu Lumora Intranet is marked as Primary Navigation.](../assets/images/nav-menus.png){: .screenshot }
+
 1. Add the existing site's pages as **URL** items, in the order the existing site shows them, for example **Home** at `/web/intranet/home`, then **News** and **People**.
 
 1. Add the forum's pages with **Add** → **Page**: **Forums**, then **Forums Moderation** and **Forum Categories Admin**. Page items keep their permissions, so members don't see the two moderator pages.
 
-1. Go to *Design* → *Page Templates* → *Masters*, and open **Forums**. Select the header's **Menu Display** widget, open its **Options** → **Configuration**, and set **Select Navigation** to **Primary Navigation**. Click **Save**, then **Publish Master**.
+    ![A navigation menu with four URL items for the intranet's pages and three page items for the forum, and the Add menu open with Page and URL outlined.](../assets/images/nav-menu-add.png){: .screenshot }
+
+1. Go to *Design* → *Page Templates* → *Masters*, and open **Forums**. Click the header's menu to select its **Menu Display** widget, and choose **Configuration** from its options menu (⋮).
+
+    ![The Forums master page with the header's Menu Display widget selected and its options menu open, with Configuration outlined.](../assets/images/menu-display-options.png){: .screenshot }
+
+1. Set **Select Navigation** to **Primary Navigation**, and click **Save**. Then click **Publish Master**.
+
+    ![The Menu Display configuration: Select Navigation is set to Primary Navigation, and the preview shows the intranet's pages first.](../assets/images/menu-display-config.png){: .screenshot }
 
 The forum's header now shows the existing site's pages, with **Forums** highlighted on the forum's home page. To match the two sites' look too, see [Matching Your Company's Look](customizing.html#matching-your-companys-look).
 
