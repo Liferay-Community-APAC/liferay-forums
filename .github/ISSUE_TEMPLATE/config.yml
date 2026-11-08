@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Liferay-Community-APAC/liferay-forums/security/advisories/new
+    about: Report it privately. Don't open a public issue for a security problem.
+  - name: Ask a question
+    url: https://github.com/Liferay-Community-APAC/liferay-forums/discussions
+    about: How to install, set up, or use the forum.
+  - name: Read the documentation
+    url: https://liferay-community-apac.github.io/liferay-forums/
+    about: Installing, administering, moderating, and the known issues of each release.

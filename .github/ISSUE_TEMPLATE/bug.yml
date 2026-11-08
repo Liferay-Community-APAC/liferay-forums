@@ -1,0 +1,89 @@
+name: Bug report
+description: Something in Liferay Forums doesn't work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Before you start:
+
+        - Check [Known Issues](https://liferay-community-apac.github.io/liferay-forums/reference/known-issues.html) and [If Something's Wrong](https://liferay-community-apac.github.io/liferay-forums/installing/checking.html#if-somethings-wrong).
+        - Search the [open issues](https://github.com/Liferay-Community-APAC/liferay-forums/issues) for the same problem.
+        - **This issue is public.** Remove email addresses, user names, hostnames, internal addresses, tokens, and any customer data from what you paste.
+        - Found a security problem? [Report it privately](https://github.com/Liferay-Community-APAC/liferay-forums/security/advisories/new) instead.
+  - type: input
+    id: forums-version
+    attributes:
+      label: Liferay Forums version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: dxp-version
+    attributes:
+      label: Liferay DXP version
+      placeholder: "2026.Q1.4 LTS"
+    validations:
+      required: true
+  - type: dropdown
+    id: install-type
+    attributes:
+      label: Install type
+      options:
+        - Liferay Self-Hosted (Tomcat)
+        - Liferay Self-Hosted (Docker)
+        - Liferay PaaS
+        - Liferay SaaS
+        - Liferay Workspace, for development
+    validations:
+      required: true
+  - type: dropdown
+    id: required-fixes
+    attributes:
+      label: Are the required Liferay fixes installed?
+      description: See [Required Liferay Fixes](https://liferay-community-apac.github.io/liferay-forums/installing/#required-liferay-fixes).
+      options:
+        - "Yes"
+        - No, I use the workarounds
+        - "No"
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead. Screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the role of the member who does each step, such as member, moderator, or administrator.
+      placeholder: |
+        1. As a member, open a topic.
+        2. Click Reply, and post a reply.
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines
+      description: Errors from the Liferay log and the microservice's log around the time of the problem. Remove private data first.
+      render: text
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: For example, your database, several forum sites, customizations, or whether it worked in an earlier version.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked Known Issues and the open issues.
+          required: true
+        - label: I removed private data, such as email addresses, hostnames, and tokens, from this report.
+          required: true

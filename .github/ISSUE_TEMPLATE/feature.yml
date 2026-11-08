@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an improvement to Liferay Forums.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: The problem or the use case, rather than the solution. For example, "Our moderators need to see which reports they've already handled."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: How you imagine it working.
+  - type: input
+    id: forums-version
+    attributes:
+      label: Liferay Forums version you use
+      placeholder: "1.0.0"
