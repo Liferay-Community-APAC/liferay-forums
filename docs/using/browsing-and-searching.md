@@ -30,7 +30,7 @@ The discussions list shows every topic, or the topics of one category.
 
 The search bar in the header and on the home page searches the forum's topics. The results page has facets to narrow results by **Category**, **Tag**, **User**, and **Modified** date.
 
-![Search results for "okta" with category, tag, user, and date facets.](../assets/images/search.png){: .screenshot }
+![Search results for "office" with category, tag, user, and last modified facets.](../assets/images/search.png){: .screenshot }
 
 Search only covers the topics of the current forum site.
 
