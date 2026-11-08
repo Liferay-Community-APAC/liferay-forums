@@ -16,10 +16,62 @@ The forum is an ordinary Liferay site, built with fragments, so you can change i
 
 | Part | Where to Change It |
 | --- | --- |
-| Header and footer colors | *Site Builder* → *Style Books* → **Forums**. **Brand Color 1** and **2** are the header's background and text, **3** and **4** the footer's. |
-| Header and footer | *Site Builder* → *Master Pages* → **Forums** |
-| Navigation links | *Site Builder* → *Pages*. **Liferay Learn** and **Help Center** are link pages you can edit or delete. |
+| Header and footer colors | *Design* → *Style Books* → **Forums**. **Brand Color 1** and **2** are the header's background and text, **3** and **4** the footer's. |
+| Header and footer | *Design* → *Page Templates* → *Masters* → **Forums** |
+| Logo | *Control Panel* → *Instance Settings* → *Instance Configuration* → *Appearance* → **Logo**. The header shows the instance's logo, next to the site's name. The logo is shared by every site that shows it. |
+| Navigation links | *Site Builder* → *Pages*. **Liferay Learn** and **Help Center** are link pages you can edit or delete. For a company intranet, delete them or point them to your own help pages. |
 | Home page title and description | Edit the home page and select the hero fragment. Change **Hero Title** and **Hero Description**. |
+
+{: .note }
+After you change a style book and click **Publish**, Liferay asks you to confirm in a **Publishing Info** dialog. Click its **Publish** too: until then, your changes stay in a draft and the site doesn't change.
+
+## Matching Your Company's Look
+
+The style book only changes a few colors, and the **Forums Footer** fragment shows a fixed line of text. To give the forum your company's header, colors, and footer, add your own styles and footer to the **Forums** master page. Every forum page uses it, so you do it once per forum site.
+
+1. Go to *Design* → *Page Templates* → *Masters*, and open **Forums**.
+
+1. From *Fragments and Widgets* → *Basic Components*, drag an **HTML** fragment onto the master page, below the content area, next to the **Forums Footer** fragment.
+
+1. Select the HTML fragment, and replace its content with a `<style>` block and your footer. For example, a light header with an indigo highlight for the current page, and a footer with your links:
+
+    ```html
+    <style>
+    .forums-header{background:#FFFFFF!important;color:#1B2257!important;box-shadow:0 1px 0 #E6E9F5}
+    .forums-header__brand,.forums-header__navigation .nav-link{color:#1B2257!important}
+    .forums-header__navigation .nav-link{border-radius:999px}
+    .forums-header__navigation .selected>.nav-link{background:#3346CC!important;color:#FFFFFF!important}
+    .forums-hero{background-image:linear-gradient(135deg,#F3F5FF,#FFF4E1)!important}
+    .forums-hero__backdrop{background:transparent!important}
+    .forums-hero h1,.forums-hero .forums-hero__stat-value{color:#1B2257!important}
+    .forums-hero p,.forums-hero figcaption{color:#5A6290!important}
+    .btn-primary{background-color:#3346CC!important;border-color:#3346CC!important}
+    .company-footer{background:#F6F7FC;border-top:4px solid #FFB03B;padding:3rem 2rem;color:#4A5180}
+    .forums-footer{display:none}
+    </style>
+    <footer class="company-footer">
+      <a href="/web/intranet">Intranet</a> · <a href="/web/intranet/help">Help</a>
+      <p>© Your Company. For internal use only.</p>
+    </footer>
+    ```
+
+    The last rule hides the **Forums Footer** fragment. You can delete that fragment from the master page instead.
+
+1. Click **Publish Master**.
+
+| To Change | Style These Classes |
+| --- | --- |
+| The header | `.forums-header`, with `.forums-header__brand` for the logo and site name, and `.forums-header__search` for the search box |
+| The navigation links | `.forums-header__navigation .nav-link`, and `.selected>.nav-link` for the current page |
+| The home page's hero | `.forums-hero`. Its `.forums-hero__backdrop` paints a dark overlay: make it transparent for a light hero, and set the hero's text colors, as in the example. |
+| The buttons | `.btn-primary` |
+| The original footer | `.forums-footer` |
+
+{: .tip }
+If your company's existing Liferay site uses its own master page, use the same styles and footer there, so that moving between the two sites looks seamless. To link the two sites' navigation, see [An Existing Site](several-sites.html#an-existing-site).
+
+{: .warning }
+These class names come from the forum's fragments and may change in a later release. After an upgrade, check the forum's header, home page, and footer.
 
 ## Promoted Discussions
 
