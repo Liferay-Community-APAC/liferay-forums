@@ -1,0 +1,39 @@
+# Builds a Liferay Forums release from a tag in the private source repository, and publishes it here as a GitHub release.
+# Run it from Actions → Release → Run workflow, after the tag exists and release-notes/<version>.md is on main.
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag in the source repository, for example v1.0.1
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ inputs.tag }}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ inputs.tag }}
+      SOURCE_DIR: source
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: LGSAPAC/lfrgs-liferay-forums
+          ref: refs/tags/${{ inputs.tag }}
+          ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
+          path: source
+          persist-credentials: false
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: "17"
+      - run: bash .github/scripts/release.sh
+        env:
+          GH_TOKEN: ${{ github.token }}
