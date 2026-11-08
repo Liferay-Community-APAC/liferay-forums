@@ -5,9 +5,10 @@ baseurl: /liferay-forums
 footer_note: Liferay Forums is available under Liferay's dual license, LGPL-2.1-or-later or the Liferay DXP EULA. Copyright &copy; 2026 Liferay, Inc.
 og_image: /assets/kb/liferay-forums-home.png
 
-# Where the docs sit in the knowledge base (as in the main site's data/apps.json).
-category_id: marketplace-apps
-category_name: Marketplace apps
+# The site section the docs belong to: the menu highlights it, and the breadcrumbs link to it.
+section_id: marketplace-apps
+section_name: Marketplace Apps
+section_url: marketplace-apps/
 
 url: https://liferay-community-apac.github.io
 lang: en
