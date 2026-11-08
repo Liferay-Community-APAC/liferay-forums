@@ -7,6 +7,8 @@ body:
       value: |
         Thanks for reporting a problem. Before you start:
 
+        - **Have a Technical Account Manager (TAM) package with Liferay?** Log the problem directly with Liferay Support in the [Liferay Help Center](https://support.liferay.com/) instead, as in [Help Center Ticket Creation Process](https://learn.liferay.com/kb-article/help-center-ticket-creation-process). See [If You Have a TAM Package](https://liferay-community-apac.github.io/liferay-forums/reference/reporting-a-bug.html#if-you-have-a-tam-package).
+
         - Check [Known Issues](https://liferay-community-apac.github.io/liferay-forums/reference/known-issues.html) and [If Something's Wrong](https://liferay-community-apac.github.io/liferay-forums/installing/checking.html#if-somethings-wrong).
         - Search the [open issues](https://github.com/Liferay-Community-APAC/liferay-forums/issues) for the same problem.
         - **This issue is public.** Remove email addresses, user names, hostnames, internal addresses, tokens, and any customer data from what you paste.

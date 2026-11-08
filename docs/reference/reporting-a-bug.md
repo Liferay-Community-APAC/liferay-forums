@@ -14,6 +14,20 @@ GitHub account.
 1. TOC
 {:toc}
 
+## If You Have a TAM Package
+
+If your Liferay subscription includes a Technical Account Manager (TAM) package, log the problem directly with
+Liferay Support instead of opening a GitHub issue. A ticket keeps your logs and environment details private, and
+your TAM can follow it up.
+
+1. Sign in to the [Liferay Help Center](https://support.liferay.com/) with your liferay.com account.
+1. Create a ticket, as described in
+   [Help Center Ticket Creation Process](https://learn.liferay.com/kb-article/help-center-ticket-creation-process).
+1. In the ticket, say that the problem is in **Liferay Forums**, with its version, and include the same details as
+   a [bug report](#report-a-bug): the Liferay DXP version, the install type, the steps to reproduce, and the log
+   lines.
+1. Let your TAM know about the ticket.
+
 ## Before You Report
 
 - Check [Known Issues](known-issues.html) for your release.

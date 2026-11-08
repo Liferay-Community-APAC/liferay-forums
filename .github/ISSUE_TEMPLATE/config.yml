@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Have a Liferay TAM package? Contact Liferay Support
+    url: https://liferay-community-apac.github.io/liferay-forums/reference/reporting-a-bug.html#if-you-have-a-tam-package
+    about: Customers with a Technical Account Manager (TAM) package log problems directly in the Liferay Help Center.
   - name: Report a security vulnerability
     url: https://github.com/Liferay-Community-APAC/liferay-forums/security/advisories/new
     about: Report it privately. Don't open a public issue for a security problem.
