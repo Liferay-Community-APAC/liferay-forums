@@ -39,7 +39,7 @@ Sebelum Anda menambahkan situs, lihat [Menjalankan Beberapa Situs Forum](../admi
 
 Anda menyalin proyek site initializer forum satu kali untuk setiap situs, dan memberikan nama tersendiri pada setiap salinan.
 
-1. Dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), unduh kode sumber forum, `liferay-forums-<version>-source.zip`, lalu ekstrak. Hasil ekstraksinya adalah folder bernama `liferay-forums-<version>`, seperti `liferay-forums-1.0.0`; jalankan perintah-perintah di bawah ini dari folder tersebut.
+1. Dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), unduh kode sumber forum, [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"}, lalu ekstrak. Hasil ekstraksinya adalah folder bernama <span data-release-folder>`liferay-forums-<version>`</span><span data-release-example>, seperti `liferay-forums-1.0.0`</span>; jalankan perintah-perintah di bawah ini dari folder tersebut.
 
 1. Salin seluruh folder `client-extensions/liferay-forums-site-initializer`, beserta semua isinya, ke folder baru di sampingnya, yang dinamai sesuai situs. Untuk situs bernama *Acme*:
 

@@ -196,6 +196,33 @@
       });
       wrap.appendChild(b);
     });
+    // Fill in versioned file names, such as the source zip, from the latest GitHub release.
+    var assets = document.querySelectorAll('[data-release-asset]'), folders = document.querySelectorAll('[data-release-folder]');
+    if ((assets.length || folders.length) && window.fetch) {
+      var key = 'latest-release:{{ site.release_repo }}', cached = null;
+      try { cached = JSON.parse(sessionStorage.getItem(key)); } catch (e) {}
+      (cached ? Promise.resolve(cached) : fetch('https://api.github.com/repos/{{ site.release_repo }}/releases/latest',
+        { headers: { Accept: 'application/vnd.github+json' } })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (r) {
+          var rel = { version: r.tag_name.replace(/^v/, ''),
+            assets: r.assets.map(function (x) { return { name: x.name, url: x.browser_download_url }; }) };
+          try { sessionStorage.setItem(key, JSON.stringify(rel)); } catch (e) {}
+          return rel;
+        }))
+        .then(function (rel) {
+          assets.forEach(function (a) {
+            var suffix = a.getAttribute('data-release-asset');
+            var match = rel.assets.filter(function (x) { return x.name.slice(-suffix.length) === suffix; })[0];
+            if (!match) return;
+            a.href = match.url;
+            (a.querySelector('code') || a).textContent = match.name;
+          });
+          folders.forEach(function (f) { (f.querySelector('code') || f).textContent = 'liferay-forums-' + rel.version; });
+          if (folders.length) document.querySelectorAll('[data-release-example]').forEach(function (e) { e.hidden = true; });
+        })
+        .catch(function () { /* Keep the placeholders and the link to the release page. */ });
+    }
   })();
 </script>
 </body>

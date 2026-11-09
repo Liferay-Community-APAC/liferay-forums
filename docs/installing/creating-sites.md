@@ -39,7 +39,7 @@ Before you add sites, see [Running Several Forum Sites](../administering/several
 
 You copy the forum's site initializer project once for each site, and give each copy names of its own.
 
-1. From the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), download the forum's source code, `liferay-forums-<version>-source.zip`, and unzip it. It unzips to a folder named `liferay-forums-<version>`, such as `liferay-forums-1.0.0`; run the commands below from there.
+1. From the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), download the forum's source code, [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"}, and unzip it. It unzips to a folder named <span data-release-folder>`liferay-forums-<version>`</span><span data-release-example>, such as `liferay-forums-1.0.0`</span>; run the commands below from there.
 
 1. Copy the whole `client-extensions/liferay-forums-site-initializer` folder, with everything in it, to a new folder next to it, named for the site. For a site named *Acme*:
 

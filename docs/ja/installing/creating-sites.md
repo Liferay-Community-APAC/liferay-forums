@@ -39,7 +39,7 @@ zip を削除しても、サイトは変わりません。zip を削除してお
 
 フォーラムの site initializer プロジェクトをサイトごとに 1 回コピーし、各コピーに固有の名前を付けます。
 
-1. [最新リリース](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest)から、フォーラムのソースコード `liferay-forums-<version>-source.zip` をダウンロードして展開します。`liferay-forums-1.0.0` のように、`liferay-forums-<version>` という名前のフォルダーに展開されます。以下のコマンドはそのフォルダーから実行します。
+1. [最新リリース](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest)から、フォーラムのソースコード [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"} をダウンロードして展開します。<span data-release-example>`liferay-forums-1.0.0` のように、</span><span data-release-folder>`liferay-forums-<version>`</span> という名前のフォルダーに展開されます。以下のコマンドはそのフォルダーから実行します。
 
 1. `client-extensions/liferay-forums-site-initializer` フォルダー全体を、その中身ごと、隣にサイト名を付けた新しいフォルダーとしてコピーします。*Acme* という名前のサイトの場合:
 

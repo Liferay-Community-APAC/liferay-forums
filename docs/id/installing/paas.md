@@ -50,7 +50,7 @@ Lihat panduan Liferay [Deploying to the Liferay Service](https://learn.liferay.c
 
 ## Langkah 3: Tambahkan Proyek-Proyek Forum {#step-3-add-the-forums-projects}
 
-1. Dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), unduh kode sumber forum, `liferay-forums-<version>-source.zip`, lalu ekstrak. Hasil ekstraksinya adalah folder bernama `liferay-forums-<version>`, seperti `liferay-forums-1.0.0`.
+1. Dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), unduh kode sumber forum, [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"}, lalu ekstrak. Hasil ekstraksinya adalah folder bernama <span data-release-folder>`liferay-forums-<version>`</span><span data-release-example>, seperti `liferay-forums-1.0.0`</span>.
 
 1. Salin tiga folder berikut ke `liferay/client-extensions` di repositori proyek PaaS Anda:
 

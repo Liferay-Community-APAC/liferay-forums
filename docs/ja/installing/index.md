@@ -48,7 +48,7 @@ Liferay Forums 1.0.0 は 2026.Q1.1 と 2026.Q1.4 でテストされています�
 | `liferay-forums-etc-spring-boot.zip` | フォーラムの**マイクロサービス**です。Liferay の横で動作する小さなプログラムで、すべての投稿について利用禁止とロックされたトピックを確認し、通知を送信します。Liferay にはこの zip が必要で、マイクロサービス自体は独立したプロセスまたはコンテナーとして実行されます。 |
 | `liferay-forums-site-initializer.zip` | フォーラムサイト本体（ページ、ロール、権限）です。これをデプロイすると、フォーラムサイトが 1 つ作成されます。 |
 | `generate-site-initializer-zips.sh` | Liferay Self-Hosted で、複数のフォーラムサイトを運用するために、site initializer の zip をサイトごとに 1 つずつ作成します。 |
-| `liferay-forums-<version>-source.zip` | 3 つの zip のソースで、Liferay Workspace の形式です。Liferay PaaS の場合、追加のフォーラムサイトごとに site initializer をビルドする場合、またはご自身の Liferay Workspace にフォーラムを追加する場合に必要です。 |
+| [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"} | 3 つの zip のソースで、Liferay Workspace の形式です。Liferay PaaS の場合、追加のフォーラムサイトごとに site initializer をビルドする場合、またはご自身の Liferay Workspace にフォーラムを追加する場合に必要です。 |
 | `SHA256SUMS` | 上記ファイルのチェックサムです。 |
 
 ## Liferay の実行環境を選ぶ {#choose-where-liferay-runs}

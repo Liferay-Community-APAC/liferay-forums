@@ -19,7 +19,7 @@ Tested with the Liferay Workspace Gradle plugin 15.0.0 and Liferay DXP 2026.Q1.4
 
 ## Step 1: Add the Forum's Projects
 
-1. From the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), download the forum's source code, `liferay-forums-<version>-source.zip`, and unzip it. It unzips to a folder named `liferay-forums-<version>`, such as `liferay-forums-1.0.0`.
+1. From the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), download the forum's source code, [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"}, and unzip it. It unzips to a folder named <span data-release-folder>`liferay-forums-<version>`</span><span data-release-example>, such as `liferay-forums-1.0.0`</span>.
 
 1. Copy these three folders into your workspace's `client-extensions` folder:
 

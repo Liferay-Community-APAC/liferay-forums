@@ -19,7 +19,7 @@ Diuji dengan plugin Gradle Liferay Workspace 15.0.0 dan Liferay DXP 2026.Q1.4. A
 
 ## Langkah 1: Tambahkan Proyek-Proyek Forum {#step-1-add-the-forums-projects}
 
-1. Dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), unduh kode sumber forum, `liferay-forums-<version>-source.zip`, lalu ekstrak. Hasil ekstraksinya adalah folder bernama `liferay-forums-<version>`, seperti `liferay-forums-1.0.0`.
+1. Dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), unduh kode sumber forum, [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"}, lalu ekstrak. Hasil ekstraksinya adalah folder bernama <span data-release-folder>`liferay-forums-<version>`</span><span data-release-example>, seperti `liferay-forums-1.0.0`</span>.
 
 1. Salin tiga folder berikut ke folder `client-extensions` di workspace Anda:
 

@@ -19,7 +19,7 @@ Liferay Workspace Gradle プラグイン 15.0.0 と Liferay DXP 2026.Q1.4 でテ
 
 ## 手順 1: フォーラムのプロジェクトを追加する {#step-1-add-the-forums-projects}
 
-1. [最新リリース](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest)から、フォーラムのソースコード `liferay-forums-<version>-source.zip` をダウンロードして展開します。`liferay-forums-1.0.0` のように、`liferay-forums-<version>` という名前のフォルダーに展開されます。
+1. [最新リリース](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest)から、フォーラムのソースコード [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"} をダウンロードして展開します。<span data-release-example>`liferay-forums-1.0.0` のように、</span><span data-release-folder>`liferay-forums-<version>`</span> という名前のフォルダーに展開されます。
 
 1. 次の 3 つのフォルダーを、Workspace の `client-extensions` フォルダーにコピーします。
 

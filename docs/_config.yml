@@ -10,6 +10,9 @@ section_id: marketplace-apps
 section_name: Marketplace Apps
 section_url: marketplace-apps/
 
+# The GitHub repository whose latest release the install pages link to.
+release_repo: Liferay-Community-APAC/liferay-forums
+
 url: https://liferay-community-apac.github.io
 lang: en
 # The main site the header, footer, styles and search come from. Leave it empty on the live site;

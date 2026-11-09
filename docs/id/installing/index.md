@@ -48,7 +48,7 @@ Setiap [rilis](https://github.com/Liferay-Community-APAC/liferay-forums/releases
 | `liferay-forums-etc-spring-boot.zip` | **Microservice** forum, program kecil yang berjalan di samping Liferay. Microservice ini memeriksa setiap postingan terhadap blokir dan topik yang dikunci, serta mengirim notifikasi. Liferay memerlukan zip-nya, sedangkan microservice itu sendiri berjalan sebagai proses atau container tersendiri. |
 | `liferay-forums-site-initializer.zip` | Situs forum itu sendiri: halaman, role, dan izinnya. Men-deploy-nya akan membuat satu situs forum. |
 | `generate-site-initializer-zips.sh` | Di Liferay Self-Hosted, membuat satu salinan zip site initializer per situs, untuk menjalankan beberapa situs forum. |
-| `liferay-forums-<version>-source.zip` | Kode sumber ketiga zip tersebut, sebagai Liferay Workspace. Anda memerlukannya di Liferay PaaS, untuk membangun site initializer bagi setiap situs forum tambahan, atau untuk menambahkan forum ke Liferay Workspace Anda sendiri. |
+| [`liferay-forums-<version>-source.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest){: data-release-asset="-source.zip"} | Kode sumber ketiga zip tersebut, sebagai Liferay Workspace. Anda memerlukannya di Liferay PaaS, untuk membangun site initializer bagi setiap situs forum tambahan, atau untuk menambahkan forum ke Liferay Workspace Anda sendiri. |
 | `SHA256SUMS` | Checksum file-file di atas. |
 
 ## Pilih Tempat Liferay Berjalan {#choose-where-liferay-runs}
