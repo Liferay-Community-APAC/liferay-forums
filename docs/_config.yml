@@ -29,6 +29,10 @@ kramdown:
 
 defaults:
   - scope: { path: "" }
-    values: { layout: default }
+    values: { layout: default, lang: en }
+  - scope: { path: "ja" }
+    values: { lang: ja }
+  - scope: { path: "id" }
+    values: { lang: id }
 
 exclude: [README.md, Gemfile, Gemfile.lock, vendor]

@@ -8,19 +8,29 @@
     parent:     the title of its section page, for pages inside a section
     nav_exclude: true to leave a page out of the sidebar
     search_exclude: true to leave a page out of the site search
+    lang:       the page's language, set for each language folder in _config.yml
+
+  Translations live in a folder per language (ja/, id/) with the same file names as the English pages.
+  Interface text comes from _data/i18n.yml. The sidebar, pager and breadcrumbs show only the page's language.
 {%- endcomment -%}
 {%- assign main = site.main_site | default: "" -%}
-{%- assign docs_pages = site.pages | where_exp: "p", "p.title" | where_exp: "p", "p.nav_exclude != true" -%}
+{%- assign lang = page.lang | default: site.lang | default: "en" -%}
+{%- assign t = site.data.i18n[lang] | default: site.data.i18n.en -%}
+{%- assign home_url = "/" | append: t.prefix -%}
+{%- comment -%} The page's address without its language folder, shared by all its translations. {%- endcomment -%}
+{%- assign base_url = page.url -%}
+{%- if t.prefix != "" -%}{%- assign base_url = page.url | remove_first: t.prefix -%}{%- endif -%}
+{%- assign docs_pages = site.pages | where_exp: "p", "p.title" | where_exp: "p", "p.nav_exclude != true" | where: "lang", lang -%}
 {%- assign tops = docs_pages | where_exp: "p", "p.parent == nil" | sort: "nav_order", "last" -%}
 {%- assign ordered = "" | split: "" -%}
-{%- for t in tops -%}
-  {%- assign ordered = ordered | push: t -%}
-  {%- assign kids = docs_pages | where: "parent", t.title | sort: "nav_order", "last" -%}
+{%- for s in tops -%}
+  {%- assign ordered = ordered | push: s -%}
+  {%- assign kids = docs_pages | where: "parent", s.title | sort: "nav_order", "last" -%}
   {%- for k in kids -%}{%- assign ordered = ordered | push: k -%}{%- endfor -%}
 {%- endfor -%}
-{%- assign is_home = false -%}{%- if page.url == "/" -%}{%- assign is_home = true -%}{%- endif -%}
+{%- assign is_home = false -%}{%- if page.url == home_url -%}{%- assign is_home = true -%}{%- endif -%}
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +40,12 @@
   {%- assign desc = page.description | default: first_p | default: site.description %}
   <meta name="description" content="{{ desc | escape }}">
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  {%- unless page.nav_exclude %}
+  {%- for l in site.data.i18n %}
+  <link rel="alternate" hreflang="{{ l[0] }}" href="{{ site.url }}{{ site.baseurl }}/{{ l[1].prefix }}{{ base_url | remove_first: '/' }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ base_url }}">
+  {%- endunless %}
   <meta property="og:title" content="{% unless is_home %}{{ page.title }} · {% endunless %}{{ site.app_name }}">
   <meta property="og:description" content="{{ desc | escape }}">
   <meta property="og:type" content="article">
@@ -45,6 +61,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="{{ main }}/assets/site.css">
   <script src="{{ main }}/assets/site-chrome.js" defer></script>
+  <style>
+    .docs-langs { display: flex; flex-wrap: wrap; gap: .25rem .9rem; margin: 0 0 1rem; font-size: .9rem; }
+    .docs-langs a[aria-current] { font-weight: 600; text-decoration: none; color: inherit; }
+  </style>
 </head>
 <body data-section="{{ site.section_id }}">
 
@@ -56,12 +76,12 @@
 
 <div class="wrap docs">
   <details class="docs-nav" id="docs-nav">
-    <summary>{{ site.app_name }} docs</summary>
+    <summary>{{ site.app_name }} {{ t.docs }}</summary>
     <ul class="docs-nav-list">
-      {%- for t in tops %}
-      {%- assign kids = docs_pages | where: "parent", t.title | sort: "nav_order", "last" -%}
-      {%- assign open = false -%}{%- if t.url == page.url or page.parent == t.title -%}{%- assign open = true -%}{%- endif %}
-      <li{% if open %} class="open"{% endif %}><a href="{{ t.url | relative_url }}"{% if t.url == page.url %} aria-current="page"{% endif %}>{% if t.url == "/" %}Overview{% else %}{{ t.title }}{% endif %}</a>
+      {%- for s in tops %}
+      {%- assign kids = docs_pages | where: "parent", s.title | sort: "nav_order", "last" -%}
+      {%- assign open = false -%}{%- if s.url == page.url or page.parent == s.title -%}{%- assign open = true -%}{%- endif %}
+      <li{% if open %} class="open"{% endif %}><a href="{{ s.url | relative_url }}"{% if s.url == page.url %} aria-current="page"{% endif %}>{% if s.url == home_url %}{{ t.overview }}{% else %}{{ s.title }}{% endif %}</a>
         {%- if kids.size > 0 %}
         <ul>
           {%- for k in kids %}
@@ -76,12 +96,24 @@
 
   <main class="docs-main">
     <p class="docs-crumbs">
-      <a href="{{ main }}/">Home</a><span>/</span>
+      <a href="{{ main }}/">{{ t.home }}</a><span>/</span>
       {%- if site.section_name %}<a href="{{ main }}/{{ site.section_url }}">{{ site.section_name }}</a><span>/</span>{% endif -%}
-      {%- if is_home %}{{ site.app_name }}{% else %}<a href="{{ '/' | relative_url }}">{{ site.app_name }}</a>{% endif -%}
+      {%- if is_home %}{{ site.app_name }}{% else %}<a href="{{ home_url | relative_url }}">{{ site.app_name }}</a>{% endif -%}
       {%- if page.parent %}{% assign par = tops | where: "title", page.parent | first %}{% if par %}<span>/</span><a href="{{ par.url | relative_url }}">{{ par.title }}</a>{% endif %}{% endif %}
     </p>
+    {%- unless page.nav_exclude %}
+    <nav class="docs-langs" aria-label="{{ t.languages }}">
+      {%- for l in site.data.i18n %}
+      {%- assign l_url = "/" | append: l[1].prefix | append: base_url | replace: "//", "/" %}
+      <a href="{{ l_url | relative_url }}" hreflang="{{ l[0] }}" lang="{{ l[0] }}"{% if l[0] == lang %} aria-current="true"{% endif %}>{{ l[1].name }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endunless %}
     <article class="prose"{% unless page.search_exclude %} data-pagefind-body{% endunless %}>
+      {%- if lang != "en" and t.translation_note %}
+      {%- assign en_url = base_url | relative_url %}
+      <p class="note">{{ t.translation_note | replace: "%EN_URL%", en_url }}</p>
+      {%- endif %}
       {{ content }}
     </article>
 
@@ -90,8 +122,8 @@
     {%- if idx >= 0 %}
     {%- assign prev_i = idx | minus: 1 -%}{%- assign next_i = idx | plus: 1 %}
     <nav class="pager" aria-label="Previous and next">
-      {%- if idx > 0 %}{% assign pp = ordered[prev_i] %}<a class="prev" href="{{ pp.url | relative_url }}"><span>Previous</span>{% if pp.url == "/" %}Overview{% else %}{{ pp.title }}{% endif %}</a>{% endif %}
-      {%- if next_i < ordered.size %}{% assign np = ordered[next_i] %}<a class="next" href="{{ np.url | relative_url }}"><span>Next</span>{{ np.title }}</a>{% endif %}
+      {%- if idx > 0 %}{% assign pp = ordered[prev_i] %}<a class="prev" href="{{ pp.url | relative_url }}"><span>{{ t.previous }}</span>{% if pp.url == home_url %}{{ t.overview }}{% else %}{{ pp.title }}{% endif %}</a>{% endif %}
+      {%- if next_i < ordered.size %}{% assign np = ordered[next_i] %}<a class="next" href="{{ np.url | relative_url }}"><span>{{ t.next }}</span>{{ np.title }}</a>{% endif %}
     </nav>
     {%- endif %}
   </main>
@@ -101,7 +133,7 @@
   {%- if site.footer_note %}
   <p data-footer-note>{{ site.footer_note }}</p>
   {%- endif %}
-  <p class="wrap disclaimer">Apps, tutorials, sample code and guides on this site are unofficial and provided as-is. Use them at your own risk.</p>
+  <p class="wrap disclaimer">{{ t.disclaimer }}</p>
 </footer>
 
 <script>
@@ -115,7 +147,7 @@
     document.querySelectorAll('.prose h2[id], .prose h3[id], .prose h4[id]').forEach(function (h) {
       var a = document.createElement('a');
       a.className = 'anchor'; a.href = '#' + h.id; a.textContent = '#';
-      a.setAttribute('aria-label', 'Link to this section');
+      a.setAttribute('aria-label', {{ t.anchor | jsonify }});
       h.appendChild(a);
     });
   })();

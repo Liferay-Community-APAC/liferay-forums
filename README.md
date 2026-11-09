@@ -24,6 +24,14 @@ Pages can use a table of contents (`1. TOC` then `{:toc}`), callouts (`{: .note 
 or `{: .warning }` on the line before a paragraph) and screenshots (`{: .screenshot }` after an image). Images go in
 `docs/assets/images/`.
 
+### Translations
+
+The docs are also in Japanese (`docs/ja/`) and Bahasa Indonesia (`docs/id/`). Each translated page has the same file
+name and folder as its English page, and its headings keep the English anchors, such as
+`## 手順 1: リリースをダウンロードする {#step-1-download-the-release}`. The `parent` of a translated page is the
+translated title of its section. When you change an English page, change its translations too. Interface text, such as
+**Previous** and **Next** and the note at the top of translated pages, is in `docs/_data/i18n.yml`.
+
 The layout in `docs/_layouts/default.html` comes from the
 [app docs template](https://github.com/Liferay-Community-APAC/app-docs-template). Improve it there, then copy it here.
 

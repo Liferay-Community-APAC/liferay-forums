@@ -1,0 +1,37 @@
+# Interface text and language names for each docs language. English pages live at the root;
+# translations live in a folder named after the language code (ja/, id/), with the same file names.
+en:
+  name: English
+  prefix: ""
+  overview: Overview
+  docs: docs
+  home: Home
+  previous: Previous
+  next: Next
+  languages: Languages
+  anchor: Link to this section
+  disclaimer: Apps, tutorials, sample code and guides on this site are unofficial and provided as-is. Use them at your own risk.
+ja:
+  name: 日本語
+  prefix: ja/
+  overview: 概要
+  docs: ドキュメント
+  home: ホーム
+  previous: 前へ
+  next: 次へ
+  languages: 言語
+  anchor: このセクションへのリンク
+  disclaimer: このサイトのアプリ、チュートリアル、サンプルコード、ガイドは非公式のもので、現状のまま提供されます。ご自身の責任でご利用ください。
+  translation_note: このページは英語版を翻訳したものです。UI のラベルとメニュー名は英語で表記しています。内容が異なる場合は、<a href="%EN_URL%">英語版</a>が優先されます。
+id:
+  name: Bahasa Indonesia
+  prefix: id/
+  overview: Ikhtisar
+  docs: dokumentasi
+  home: Beranda
+  previous: Sebelumnya
+  next: Berikutnya
+  languages: Bahasa
+  anchor: Tautan ke bagian ini
+  disclaimer: Aplikasi, tutorial, contoh kode, dan panduan di situs ini tidak resmi dan disediakan apa adanya. Gunakan dengan risiko Anda sendiri.
+  translation_note: Halaman ini adalah terjemahan dari versi bahasa Inggris. Label antarmuka dan nama menu ditulis dalam bahasa Inggris. Jika ada perbedaan, <a href="%EN_URL%">versi bahasa Inggris</a> yang berlaku.
