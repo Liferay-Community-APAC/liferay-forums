@@ -42,24 +42,10 @@ Style book hanya mengubah beberapa warna, dan fragment **Forums Footer** menampi
 1. Klik dua kali fragment HTML untuk mengedit kodenya, lalu ganti isinya dengan blok `<style>` dan footer Anda. Misalnya, header terang dengan sorotan indigo untuk halaman saat ini, dan footer dengan tautan Anda:
 
     ```html
-    <style>
-    .forums-header{background:#FFFFFF!important;color:#1B2257!important;box-shadow:0 1px 0 #E6E9F5}
-    .forums-header__brand,.forums-header__navigation .nav-link{color:#1B2257!important}
-    .forums-header__navigation .nav-link{border-radius:999px}
-    .forums-header__navigation .selected>.nav-link{background:#3346CC!important;color:#FFFFFF!important}
-    .forums-hero{background-image:linear-gradient(135deg,#F3F5FF,#FFF4E1)!important}
-    .forums-hero__backdrop{background:transparent!important}
-    .forums-hero h1,.forums-hero .forums-hero__stat-value{color:#1B2257!important}
-    .forums-hero p,.forums-hero figcaption{color:#5A6290!important}
-    .btn-primary{background-color:#3346CC!important;border-color:#3346CC!important}
-    .company-footer{background:#F6F7FC;border-top:4px solid #FFB03B;padding:3rem 2rem;color:#4A5180}
-    .forums-footer{display:none}
-    </style>
-    <footer class="company-footer">
-      <a href="/web/intranet">Intranet</a> · <a href="/web/intranet/help">Help</a>
-      <p>© Your Company. For internal use only.</p>
-    </footer>
+   {% include snippet.md file="company-look.html" indent="   " %}
     ```
+
+    {% include download.html file="company-look.html" %}
 
     Aturan terakhir menyembunyikan fragment **Forums Footer**. Sebagai gantinya, Anda dapat menghapus fragment tersebut dari master page. Klik **Save**: editor menampilkan pratinjau footer Anda di samping kode.
 

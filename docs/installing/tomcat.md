@@ -74,20 +74,10 @@ The microservice must run whenever Liferay runs: posting, notifications, and mod
 To keep it running across reboots on Linux, run it as a system service. For example, a systemd unit at `/etc/systemd/system/liferay-forums.service`:
 
 ```ini
-[Unit]
-Description=Liferay Forums microservice
-After=network.target
-
-[Service]
-User=liferay
-Environment=LIFERAY_HOME=/opt/liferay
-WorkingDirectory=/opt/liferay-forums
-ExecStart=/opt/liferay-forums/start.sh
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
+{% include snippet.md file="liferay-forums.service" indent="" %}
 ```
+
+{% include download.html file="liferay-forums.service" %}
 
 Then run `sudo systemctl enable --now liferay-forums`.
 

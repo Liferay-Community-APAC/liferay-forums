@@ -11,6 +11,7 @@ en:
   languages: Languages
   anchor: Link to this section
   copy: Copy
+  download: Download
   copied: Copied
   copy_failed: Press Ctrl+C to copy
   disclaimer: Apps, tutorials, sample code and guides on this site are unofficial and provided as-is. Use them at your own risk.
@@ -25,6 +26,7 @@ ja:
   languages: 言語
   anchor: このセクションへのリンク
   copy: コピー
+  download: ダウンロード
   copied: コピーしました
   copy_failed: Ctrl+C でコピーしてください
   disclaimer: このサイトのアプリ、チュートリアル、サンプルコード、ガイドは非公式のもので、現状のまま提供されます。ご自身の責任でご利用ください。
@@ -40,6 +42,7 @@ id:
   languages: Bahasa
   anchor: Tautan ke bagian ini
   copy: Salin
+  download: Unduh
   copied: Tersalin
   copy_failed: Tekan Ctrl+C untuk menyalin
   disclaimer: Aplikasi, tutorial, contoh kode, dan panduan di situs ini tidak resmi dan disediakan apa adanya. Gunakan dengan risiko Anda sendiri.

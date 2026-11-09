@@ -1,0 +1,6 @@
+{%- comment -%}
+  A download button for a file in assets/downloads/. Usage: {% include download.html file="name" %}
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang | default: "en" -%}
+{%- assign t = site.data.i18n[lang] | default: site.data.i18n.en -%}
+<a class="download-file" href="{{ '/assets/downloads/' | append: include.file | relative_url }}" download="{{ include.file }}"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v8M4.5 6.5 8 10l3.5-3.5M2.5 13.5h11"/></svg>{{ t.download }} <code>{{ include.file }}</code></a>

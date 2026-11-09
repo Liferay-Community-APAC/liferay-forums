@@ -63,20 +63,10 @@ zip を削除しても、サイトは変わりません。zip を削除してお
 1. コピーで `client-extension.yaml` を開き、その内容全体を新しいサイト用の名前に置き換えます。その中のすべての名前（2 つのキー、OAuth アプリケーション、サイトの外部参照コード）は、そのコピーに固有のものにする必要があります。*Acme* という名前のサイトの場合:
 
     ```yaml
-    liferay-forums-site-initializer-acme:
-        name: Liferay Forums Site Initializer Acme
-        oAuthApplicationHeadlessServer: liferay-forums-site-initializer-acme-oahs
-        siteExternalReferenceCode: LIFERAY_ACME
-        siteName: Acme
-        type: siteInitializer
-    liferay-forums-site-initializer-acme-oahs:
-        .serviceAddress: localhost:8080
-        .serviceScheme: http
-        name: Liferay Forums Site Initializer Acme OAuth Application Headless Server
-        scopes:
-            -   Liferay.Headless.Site.everything
-        type: oAuthApplicationHeadlessServer
+   {% include snippet.md file="client-extension.yaml" indent="   " %}
     ```
+
+    {% include download.html file="client-extension.yaml" %}
 
     Liferay は `siteName` からサイトのアドレスを作成します。このサイトは `/web/acme` で公開されます。
 

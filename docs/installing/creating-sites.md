@@ -63,20 +63,10 @@ You copy the forum's site initializer project once for each site, and give each 
 1. In the copy, open `client-extension.yaml`, and replace all of its contents with names for the new site. Every name in it must be unique to the copy: the two keys, the OAuth application, and the site's external reference code. For a site named *Acme*:
 
     ```yaml
-    liferay-forums-site-initializer-acme:
-        name: Liferay Forums Site Initializer Acme
-        oAuthApplicationHeadlessServer: liferay-forums-site-initializer-acme-oahs
-        siteExternalReferenceCode: LIFERAY_ACME
-        siteName: Acme
-        type: siteInitializer
-    liferay-forums-site-initializer-acme-oahs:
-        .serviceAddress: localhost:8080
-        .serviceScheme: http
-        name: Liferay Forums Site Initializer Acme OAuth Application Headless Server
-        scopes:
-            -   Liferay.Headless.Site.everything
-        type: oAuthApplicationHeadlessServer
+   {% include snippet.md file="client-extension.yaml" indent="   " %}
     ```
+
+    {% include download.html file="client-extension.yaml" %}
 
     Liferay builds the site's address from `siteName`: this site is served at `/web/acme`.
 

@@ -63,20 +63,10 @@ Anda menyalin proyek site initializer forum satu kali untuk setiap situs, dan me
 1. Di salinan tersebut, buka `client-extension.yaml`, dan ganti seluruh isinya dengan nama-nama untuk situs baru. Setiap nama di dalamnya harus unik untuk salinan tersebut: kedua key, aplikasi OAuth, dan kode referensi eksternal situs. Untuk situs bernama *Acme*:
 
     ```yaml
-    liferay-forums-site-initializer-acme:
-        name: Liferay Forums Site Initializer Acme
-        oAuthApplicationHeadlessServer: liferay-forums-site-initializer-acme-oahs
-        siteExternalReferenceCode: LIFERAY_ACME
-        siteName: Acme
-        type: siteInitializer
-    liferay-forums-site-initializer-acme-oahs:
-        .serviceAddress: localhost:8080
-        .serviceScheme: http
-        name: Liferay Forums Site Initializer Acme OAuth Application Headless Server
-        scopes:
-            -   Liferay.Headless.Site.everything
-        type: oAuthApplicationHeadlessServer
+   {% include snippet.md file="client-extension.yaml" indent="   " %}
     ```
+
+    {% include download.html file="client-extension.yaml" %}
 
     Liferay membentuk alamat situs dari `siteName`: situs ini tersedia di `/web/acme`.
 

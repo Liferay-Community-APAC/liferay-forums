@@ -74,20 +74,10 @@ Liferay はマイクロサービスを登録し、その認証情報を `<lifera
 Linux で再起動後も動作させ続けるには、システムサービスとして実行します。たとえば、`/etc/systemd/system/liferay-forums.service` に次の systemd ユニットを作成します。
 
 ```ini
-[Unit]
-Description=Liferay Forums microservice
-After=network.target
-
-[Service]
-User=liferay
-Environment=LIFERAY_HOME=/opt/liferay
-WorkingDirectory=/opt/liferay-forums
-ExecStart=/opt/liferay-forums/start.sh
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
+{% include snippet.md file="liferay-forums.service" indent="" %}
 ```
+
+{% include download.html file="liferay-forums.service" %}
 
 その後、`sudo systemctl enable --now liferay-forums` を実行します。
 

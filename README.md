@@ -24,6 +24,33 @@ Pages can use a table of contents (`1. TOC` then `{:toc}`), callouts (`{: .note 
 or `{: .warning }` on the line before a paragraph) and screenshots (`{: .screenshot }` after an image). Images go in
 `docs/assets/images/`.
 
+### Downloadable Files
+
+Every code block gets a **Copy** button. A file readers save or paste whole, and that isn't in the release, can also
+get a **Download** button. Keep a single copy of it in `docs/_includes/snippets/`, and add a page for it in
+`docs/assets/downloads/` that includes it:
+
+```liquid
+---
+layout: null
+sitemap: false
+---
+{% include snippets/liferay-forums.service %}
+```
+
+Then show it and offer it for download where the docs need it. In a numbered list, indent both lines by three spaces
+and pass `indent="   "`:
+
+````markdown
+```ini
+{% include snippet.md file="liferay-forums.service" indent="" %}
+```
+
+{% include download.html file="liferay-forums.service" %}
+````
+
+The code block and the download then always match. Files in the release stay in the release.
+
 ### Translations
 
 The docs are also in Japanese (`docs/ja/`) and Bahasa Indonesia (`docs/id/`). Each translated page has the same file

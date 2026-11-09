@@ -69,6 +69,11 @@
     .copy-code { position: absolute; top: 8px; right: 8px; padding: 3px 10px; font: inherit; font-size: 13px; line-height: 1.5;
       color: var(--muted); background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; }
     .copy-code:hover, .copy-code:focus-visible { color: inherit; border-color: currentColor; }
+    .download-file { display: inline-flex; align-items: center; gap: 8px; margin-top: -6px; padding: 7px 14px; border: 1px solid var(--c-note);
+      border-radius: 8px; color: var(--c-note); font-weight: 600; text-decoration: none; }
+    .download-file:hover, .download-file:focus-visible { background: var(--c-note); color: #fff; }
+    .download-file:hover code, .download-file:focus-visible code { color: inherit; }
+    .download-file code { background: none; border: 0; padding: 0; color: inherit; font-weight: 400; }
   </style>
 </head>
 <body data-section="{{ site.section_id }}">
@@ -175,7 +180,12 @@
       b.type = 'button'; b.className = 'copy-code'; b.textContent = copyText;
       b.addEventListener('click', function () {
         var code = pre.querySelector('code') || pre;
-        copy(code.textContent.replace(/\n$/, '')).then(function () { b.textContent = copiedText; },
+        // Drop indentation shared by every line, which code blocks inside lists can pick up.
+        var lines = code.textContent.replace(/\n$/, '').split('\n');
+        var indent = Math.min.apply(null, lines.filter(function (l) { return l.trim(); })
+          .map(function (l) { return l.match(/^ */)[0].length; }));
+        if (indent > 0 && isFinite(indent)) lines = lines.map(function (l) { return l.slice(Math.min(indent, l.match(/^ */)[0].length)); });
+        copy(lines.join('\n')).then(function () { b.textContent = copiedText; },
           function () {
             // Select the code so the reader can copy it with the keyboard.
             var r = document.createRange(); r.selectNodeContents(code);
