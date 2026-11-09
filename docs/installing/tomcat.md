@@ -17,12 +17,12 @@ You need file access to the Liferay server, the [required Liferay fixes](./#requ
 
 ## Step 1: Download the Release
 
-From the [release](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads/1.0.0), download:
+From the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), download:
 
-- `liferay-forums-batch.zip`
-- `liferay-forums-etc-spring-boot.zip`
-- `liferay-forums-site-initializer.zip`
-- `generate-site-initializer-zips.sh`, only to run several forum sites with the script; see [Creating Forum Sites](creating-sites.html#a-shortcut-on-liferay-self-hosted).
+- [`liferay-forums-batch.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest/download/liferay-forums-batch.zip)
+- [`liferay-forums-etc-spring-boot.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest/download/liferay-forums-etc-spring-boot.zip)
+- [`liferay-forums-site-initializer.zip`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest/download/liferay-forums-site-initializer.zip)
+- [`generate-site-initializer-zips.sh`](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest/download/generate-site-initializer-zips.sh), only to run several forum sites with the script; see [Creating Forum Sites](creating-sites.html#a-shortcut-on-liferay-self-hosted).
 
 ## Step 2: Deploy the Batch
 

@@ -40,7 +40,7 @@ Liferay Forums 1.0.0 was tested on 2026.Q1.1 and 2026.Q1.4.
 
 ## What You'll Install
 
-Each [release](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads) has these files:
+Each [release](https://github.com/Liferay-Community-APAC/liferay-forums/releases) has these files:
 
 | File | What It Is |
 | --- | --- |
@@ -48,7 +48,7 @@ Each [release](https://github.com/Liferay-Community-APAC/liferay-forums/tree/dow
 | `liferay-forums-etc-spring-boot.zip` | The forum's **microservice**, a small program that runs next to Liferay. It checks every post for bans and locked topics, and sends notifications. Liferay needs its zip, and the microservice itself runs as its own process or container. |
 | `liferay-forums-site-initializer.zip` | The forum site itself: its pages, roles, and permissions. Deploying it creates one forum site. |
 | `generate-site-initializer-zips.sh` | On Liferay Self-Hosted, makes one copy of the site initializer zip per site, to run several forum sites. |
-| `liferay-forums-1.0.0-source.zip` | The source of the three zips, as a Liferay Workspace. You need it on Liferay PaaS, to build a site initializer for each additional forum site, or to add the forum to your own Liferay Workspace. |
+| `liferay-forums-<version>-source.zip` | The source of the three zips, as a Liferay Workspace. You need it on Liferay PaaS, to build a site initializer for each additional forum site, or to add the forum to your own Liferay Workspace. |
 | `SHA256SUMS` | Checksums of the files above. |
 
 ## Choose Where Liferay Runs

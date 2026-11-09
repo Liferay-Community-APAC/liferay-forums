@@ -50,7 +50,7 @@ See Liferay's [Deploying to the Liferay Service](https://learn.liferay.com/w/dxp
 
 ## Step 3: Add the Forum's Projects
 
-1. Download the forum's source code, [liferay-forums-1.0.0-source.zip](https://raw.githubusercontent.com/Liferay-Community-APAC/liferay-forums/downloads/1.0.0/liferay-forums-1.0.0-source.zip), from the [release](https://github.com/Liferay-Community-APAC/liferay-forums/tree/downloads/1.0.0), and unzip it. It unzips to a folder named `liferay-forums-1.0.0`.
+1. From the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest), download the forum's source code, `liferay-forums-<version>-source.zip`, and unzip it. It unzips to a folder named `liferay-forums-<version>`, such as `liferay-forums-1.0.0`.
 
 1. Copy these three folders into `liferay/client-extensions` in your PaaS project's repository:
 
