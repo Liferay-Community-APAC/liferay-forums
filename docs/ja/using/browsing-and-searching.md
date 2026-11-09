@@ -43,4 +43,5 @@ nav_order: 1
 - [ディスカッションの開始](starting-a-discussion.html)
 - [カテゴリーの管理](../administering/categories.html)
 - [Forums Assistant with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/)（ソリューションレシピ、英語）
+- [AI Discussion Summaries with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-summaries/)（ソリューションレシピ、英語）
 - [Liferay AI Hub](https://www.liferay.co.jp/capabilities/ai-hub)（公式製品ページ）

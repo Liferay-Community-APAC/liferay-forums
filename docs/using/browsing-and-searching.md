@@ -43,4 +43,5 @@ A topic page lists **Related Topics**: other topics in the same category, with t
 - [Starting a Discussion](starting-a-discussion.html)
 - [Managing Categories](../administering/categories.html)
 - [Forums Assistant with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/), a solution recipe
+- [AI Discussion Summaries with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-summaries/), a solution recipe
 - [Liferay AI Hub](https://www.liferay.com/capabilities/ai-hub), the official product page

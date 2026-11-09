@@ -87,4 +87,5 @@ Your changes to a forum site are kept: a site initializer only sets up a site wh
 - [Configuration Reference](../reference/configuration.html)
 - [Running Several Forum Sites](several-sites.html)
 - [Forums Assistant with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/), a solution recipe
+- [AI Discussion Summaries with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-summaries/), a solution recipe
 - [Liferay AI Hub](https://www.liferay.com/capabilities/ai-hub), the official product page
