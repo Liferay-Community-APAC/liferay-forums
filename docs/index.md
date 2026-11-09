@@ -44,7 +44,7 @@ To install Liferay Forums, follow [Installing](installing/). Download the releas
 Recipes combine Liferay Forums with other Liferay products, step by step. They're on the Liferay Community APAC site.
 
 <div class="doc-cards">
-  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Add an AI chat that tells members where to find the discussions they're looking for, searching only what each member can see. Uses Liferay AI Hub, which is in beta.</span></a>
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Add an AI chat that tells members where to find the discussions they're looking for, searching only what each member can see. Uses Liferay AI Hub, generally available from Liferay DXP 2026.Q3.</span></a>
 </div>
 
 <div class="product-spotlight">

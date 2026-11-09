@@ -44,7 +44,7 @@ Untuk menginstal Liferay Forums, ikuti [Instalasi](installing/). Unduh file rili
 Resep menunjukkan langkah demi langkah cara menggabungkan Liferay Forums dengan produk Liferay lainnya. Resep tersedia di situs Liferay Community APAC (dalam bahasa Inggris).
 
 <div class="doc-cards">
-  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Tambahkan obrolan AI yang memberi tahu anggota di mana diskusi yang mereka cari, dengan hanya mencari konten yang dapat dilihat setiap anggota. Menggunakan Liferay AI Hub, yang masih beta.</span></a>
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Tambahkan obrolan AI yang memberi tahu anggota di mana diskusi yang mereka cari, dengan hanya mencari konten yang dapat dilihat setiap anggota. Menggunakan Liferay AI Hub, yang tersedia secara umum (GA) sejak Liferay DXP 2026.Q3.</span></a>
 </div>
 
 <div class="product-spotlight">

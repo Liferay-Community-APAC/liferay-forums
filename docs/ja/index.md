@@ -44,7 +44,7 @@ Liferay Forums をインストールするには、[インストール](installi
 レシピでは、Liferay Forums をほかの Liferay 製品と組み合わせる方法を手順を追って説明します。レシピは Liferay Community APAC サイトにあります（英語）。
 
 <div class="doc-cards">
-  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>メンバーが探しているディスカッションの場所を教える AI チャットを追加します。検索するのは、各メンバーが閲覧できる内容だけです。ベータ版の Liferay AI Hub を使用します。</span></a>
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>メンバーが探しているディスカッションの場所を教える AI チャットを追加します。検索するのは、各メンバーが閲覧できる内容だけです。Liferay AI Hub（Liferay DXP 2026.Q3 から一般提供）を使用します。</span></a>
 </div>
 
 <div class="product-spotlight">
