@@ -10,6 +10,9 @@ en:
   next: Next
   languages: Languages
   anchor: Link to this section
+  copy: Copy
+  copied: Copied
+  copy_failed: Press Ctrl+C to copy
   disclaimer: Apps, tutorials, sample code and guides on this site are unofficial and provided as-is. Use them at your own risk.
 ja:
   name: 日本語
@@ -21,6 +24,9 @@ ja:
   next: 次へ
   languages: 言語
   anchor: このセクションへのリンク
+  copy: コピー
+  copied: コピーしました
+  copy_failed: Ctrl+C でコピーしてください
   disclaimer: このサイトのアプリ、チュートリアル、サンプルコード、ガイドは非公式のもので、現状のまま提供されます。ご自身の責任でご利用ください。
   translation_note: このページは英語版を翻訳したものです。UI のラベルとメニュー名は英語で表記しています。内容が異なる場合は、<a href="%EN_URL%">英語版</a>が優先されます。
 id:
@@ -33,5 +39,8 @@ id:
   next: Berikutnya
   languages: Bahasa
   anchor: Tautan ke bagian ini
+  copy: Salin
+  copied: Tersalin
+  copy_failed: Tekan Ctrl+C untuk menyalin
   disclaimer: Aplikasi, tutorial, contoh kode, dan panduan di situs ini tidak resmi dan disediakan apa adanya. Gunakan dengan risiko Anda sendiri.
   translation_note: Halaman ini adalah terjemahan dari versi bahasa Inggris. Label antarmuka dan nama menu ditulis dalam bahasa Inggris. Jika ada perbedaan, <a href="%EN_URL%">versi bahasa Inggris</a> yang berlaku.
