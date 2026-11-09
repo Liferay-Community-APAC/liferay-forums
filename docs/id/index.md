@@ -38,3 +38,11 @@ Forum diskusi modern untuk Liferay DXP. Anggota mengajukan pertanyaan, berbagi j
 | [1.0.0](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0) | 2026.Q1 LTS, dengan [perbaikan Liferay yang diperlukan](installing/#required-liferay-fixes). Diuji pada 2026.Q1.1 dan 2026.Q1.4. |
 
 Untuk menginstal Liferay Forums, ikuti [Instalasi](installing/). Unduh file rilis dari [rilis terbaru](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest).
+
+## Resep Solusi {#solution-recipes}
+
+Resep menunjukkan langkah demi langkah cara menggabungkan Liferay Forums dengan produk Liferay lainnya. Resep tersedia di situs Liferay Community APAC (dalam bahasa Inggris).
+
+<div class="doc-cards">
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Tambahkan obrolan AI yang memberi tahu anggota di mana diskusi yang mereka cari, dengan hanya mencari konten yang dapat dilihat setiap anggota. Menggunakan Liferay AI Hub, yang masih beta.</span></a>
+</div>

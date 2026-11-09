@@ -86,3 +86,4 @@ nav_order: 3
 
 - [設定リファレンス](../reference/configuration.html)
 - [複数のフォーラムサイトの運用](several-sites.html)
+- [Forums Assistant with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/)（ソリューションレシピ、英語）

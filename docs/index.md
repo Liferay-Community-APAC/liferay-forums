@@ -38,3 +38,11 @@ Modern discussion forums for Liferay DXP. Members ask questions, share answers, 
 | [1.0.0](https://github.com/Liferay-Community-APAC/liferay-forums/releases/tag/v1.0.0) | 2026.Q1 LTS, with the [required Liferay fixes](installing/#required-liferay-fixes). Tested on 2026.Q1.1 and 2026.Q1.4. |
 
 To install Liferay Forums, follow [Installing](installing/). Download the release files from the [latest release](https://github.com/Liferay-Community-APAC/liferay-forums/releases/latest).
+
+## Solution Recipes
+
+Recipes combine Liferay Forums with other Liferay products, step by step. They're on the Liferay Community APAC site.
+
+<div class="doc-cards">
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Add an AI chat that tells members where to find the discussions they're looking for, searching only what each member can see. Uses Liferay AI Hub, which is in beta.</span></a>
+</div>

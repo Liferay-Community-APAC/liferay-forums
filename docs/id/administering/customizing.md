@@ -86,3 +86,4 @@ Perubahan Anda pada situs forum tetap dipertahankan: site initializer hanya meny
 
 - [Referensi Konfigurasi](../reference/configuration.html)
 - [Menjalankan Beberapa Situs Forum](several-sites.html)
+- [Forums Assistant with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/), resep solusi (dalam bahasa Inggris)

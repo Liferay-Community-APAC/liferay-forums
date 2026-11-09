@@ -42,3 +42,4 @@ Halaman topik mencantumkan **Related Topics**: topik lain dalam kategori yang sa
 
 - [Memulai Diskusi](starting-a-discussion.html)
 - [Mengelola Kategori](../administering/categories.html)
+- [Forums Assistant with AI Hub](https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/), resep solusi (dalam bahasa Inggris)
