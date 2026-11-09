@@ -8,7 +8,6 @@ en:
   home: Home
   previous: Previous
   next: Next
-  languages: Languages
   anchor: Link to this section
   copy: Copy
   download: Download
@@ -23,7 +22,6 @@ ja:
   home: ホーム
   previous: 前へ
   next: 次へ
-  languages: 言語
   anchor: このセクションへのリンク
   copy: コピー
   download: ダウンロード
@@ -39,7 +37,6 @@ id:
   home: Beranda
   previous: Sebelumnya
   next: Berikutnya
-  languages: Bahasa
   anchor: Tautan ke bagian ini
   copy: Salin
   download: Unduh

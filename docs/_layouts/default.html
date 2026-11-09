@@ -12,6 +12,7 @@
 
   Translations live in a folder per language (ja/, id/) with the same file names as the English pages.
   Interface text comes from _data/i18n.yml. The sidebar, pager and breadcrumbs show only the page's language.
+  The main site's header switches language with the page's hreflang links (in the head), so the docs have no switcher of their own.
 {%- endcomment -%}
 {%- assign main = site.main_site | default: "" -%}
 {%- assign lang = page.lang | default: site.lang | default: "en" -%}
@@ -62,8 +63,6 @@
   <link rel="stylesheet" href="{{ main }}/assets/site.css">
   <script src="{{ main }}/assets/site-chrome.js" defer></script>
   <style>
-    .docs-langs { display: flex; flex-wrap: wrap; gap: .25rem .9rem; margin: 0 0 1rem; font-size: .9rem; }
-    .docs-langs a[aria-current] { font-weight: 600; text-decoration: none; color: inherit; }
     .code-block { position: relative; }
     .code-block pre { padding-right: 84px; }
     .copy-code { position: absolute; top: 8px; right: 8px; padding: 3px 10px; font: inherit; font-size: 13px; line-height: 1.5;
@@ -117,14 +116,6 @@
       {%- if is_home %}{{ site.app_name }}{% else %}<a href="{{ home_url | relative_url }}">{{ site.app_name }}</a>{% endif -%}
       {%- if page.parent %}{% assign par = tops | where: "title", page.parent | first %}{% if par %}<span>/</span><a href="{{ par.url | relative_url }}">{{ par.title }}</a>{% endif %}{% endif %}
     </p>
-    {%- unless page.nav_exclude %}
-    <nav class="docs-langs" aria-label="{{ t.languages }}">
-      {%- for l in site.data.i18n %}
-      {%- assign l_url = "/" | append: l[1].prefix | append: base_url | replace: "//", "/" %}
-      <a href="{{ l_url | relative_url }}" hreflang="{{ l[0] }}" lang="{{ l[0] }}"{% if l[0] == lang %} aria-current="true"{% endif %}>{{ l[1].name }}</a>
-      {%- endfor %}
-    </nav>
-    {%- endunless %}
     <article class="prose"{% unless page.search_exclude %} data-pagefind-body{% endunless %}>
       {%- if lang != "en" and t.translation_note %}
       {%- assign en_url = base_url | relative_url %}
