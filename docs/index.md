@@ -46,6 +46,7 @@ Recipes combine Liferay Forums with other Liferay products, step by step. They'r
 <div class="doc-cards">
   <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Add an AI chat that tells members where to find the discussions they're looking for, searching only what each member can see. Uses Liferay AI Hub, generally available from Liferay DXP 2026.Q3.</span></a>
   <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-summaries/"><strong>AI Discussion Summaries with AI Hub</strong><span>Show an AI summary at the top of busy discussions, written by a Liferay AI Hub agent and kept up to date as replies arrive. Uses Liferay AI Hub, generally available from Liferay DXP 2026.Q3.</span></a>
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/sharepoint-discussions-to-forums/"><strong>SharePoint Discussions to Liferay Forums</strong><span>Move SharePoint Server 2016 discussion boards into Liferay Forums, keeping authors, nested replies, best answers, attachments and likes. Uses Liferay Migration Studio, which is coming soon.</span></a>
 </div>
 
 <div class="product-spotlight">

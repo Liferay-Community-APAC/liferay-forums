@@ -75,3 +75,4 @@ Liferay Self-Hosted では、その後に[フォーラムサイトの作成](cre
 
 - [はじめに](../getting-started.html)
 - [フォーラムサイトの削除](deleting.html)
+- [SharePoint Discussions to Liferay Forums](https://liferay-community-apac.github.io/solution-recipes/sharepoint-discussions-to-forums/)（ソリューションレシピ、英語）

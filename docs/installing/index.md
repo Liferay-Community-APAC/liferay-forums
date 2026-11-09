@@ -75,3 +75,4 @@ The forum is installed in a fixed order: the batch, then the microservice, then 
 
 - [Getting Started](../getting-started.html)
 - [Deleting a Forum Site](deleting.html)
+- [SharePoint Discussions to Liferay Forums](https://liferay-community-apac.github.io/solution-recipes/sharepoint-discussions-to-forums/), a solution recipe for moving SharePoint discussion boards into the forum

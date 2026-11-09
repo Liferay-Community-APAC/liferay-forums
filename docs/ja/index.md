@@ -46,6 +46,7 @@ Liferay Forums をインストールするには、[インストール](installi
 <div class="doc-cards">
   <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>メンバーが探しているディスカッションの場所を教える AI チャットを追加します。検索するのは、各メンバーが閲覧できる内容だけです。Liferay AI Hub（Liferay DXP 2026.Q3 から一般提供）を使用します。</span></a>
   <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-summaries/"><strong>AI Discussion Summaries with AI Hub</strong><span>活発なディスカッションの冒頭に AI による要約を表示します。要約は Liferay AI Hub のエージェントが作成し、新しい返信に合わせて更新されます。Liferay AI Hub（Liferay DXP 2026.Q3 から一般提供）を使用します。</span></a>
+  <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/sharepoint-discussions-to-forums/"><strong>SharePoint Discussions to Liferay Forums</strong><span>SharePoint Server 2016 のディスカッション掲示板を Liferay Forums に移行します。投稿者、入れ子の返信、ベストアンサー、添付ファイル、いいねはそのまま引き継がれます。近日公開予定の Liferay Migration Studio を使用します。</span></a>
 </div>
 
 <div class="product-spotlight">

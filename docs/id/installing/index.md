@@ -75,3 +75,4 @@ Forum diinstal dengan urutan yang tetap: batch, lalu microservice, lalu situs. S
 
 - [Memulai](../getting-started.html)
 - [Menghapus Situs Forum](deleting.html)
+- [SharePoint Discussions to Liferay Forums](https://liferay-community-apac.github.io/solution-recipes/sharepoint-discussions-to-forums/), resep solusi (dalam bahasa Inggris)
