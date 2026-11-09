@@ -49,5 +49,5 @@ Liferay Forums をインストールするには、[インストール](installi
 
 <div class="product-spotlight">
   <a href="https://www.liferay.co.jp/capabilities/ai-hub"><img src="../assets/images/ai-hub.png" alt="Liferay AI Hub" width="96" height="96"></a>
-  <p><strong>Liferay AI Hub で構築。</strong>Liferay AI Hub を使うと、学習して判断し、デジタルエクスペリエンスを向上させる AI エージェントを、技術的な障壁なしに展開できます。 <a href="https://www.liferay.co.jp/capabilities/ai-hub">Liferay AI Hub の詳細を見る</a></p>
+  <p><strong>Liferay AI Hub を活用。</strong>Liferay AI Hub を使うと、学習して判断し、デジタルエクスペリエンスを向上させる AI エージェントを、技術的な障壁なしに展開できます。 <a href="https://www.liferay.co.jp/capabilities/ai-hub">Liferay AI Hub の詳細を見る</a></p>
 </div>

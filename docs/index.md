@@ -49,5 +49,5 @@ Recipes combine Liferay Forums with other Liferay products, step by step. They'r
 
 <div class="product-spotlight">
   <a href="https://www.liferay.com/capabilities/ai-hub"><img src="assets/images/ai-hub.png" alt="Liferay AI Hub" width="96" height="96"></a>
-  <p><strong>Built with Liferay AI Hub.</strong> Liferay AI Hub lets you deploy AI agents that learn, make decisions, and improve your digital experiences, without the technical barriers. <a href="https://www.liferay.com/capabilities/ai-hub">Learn about Liferay AI Hub</a></p>
+  <p><strong>Powered by Liferay AI Hub.</strong> Liferay AI Hub lets you deploy AI agents that learn, make decisions, and improve your digital experiences, without the technical barriers. <a href="https://www.liferay.com/capabilities/ai-hub">Learn about Liferay AI Hub</a></p>
 </div>

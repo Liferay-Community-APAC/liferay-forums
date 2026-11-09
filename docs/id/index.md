@@ -49,5 +49,5 @@ Resep menunjukkan langkah demi langkah cara menggabungkan Liferay Forums dengan 
 
 <div class="product-spotlight">
   <a href="https://www.liferay.com/capabilities/ai-hub"><img src="../assets/images/ai-hub.png" alt="Liferay AI Hub" width="96" height="96"></a>
-  <p><strong>Dibangun dengan Liferay AI Hub.</strong> Dengan Liferay AI Hub, Anda dapat menjalankan agen AI yang belajar, mengambil keputusan, dan meningkatkan pengalaman digital Anda, tanpa hambatan teknis. <a href="https://www.liferay.com/capabilities/ai-hub">Pelajari Liferay AI Hub (dalam bahasa Inggris)</a></p>
+  <p><strong>Didukung oleh Liferay AI Hub.</strong> Dengan Liferay AI Hub, Anda dapat menjalankan agen AI yang belajar, mengambil keputusan, dan meningkatkan pengalaman digital Anda, tanpa hambatan teknis. <a href="https://www.liferay.com/capabilities/ai-hub">Pelajari Liferay AI Hub (dalam bahasa Inggris)</a></p>
 </div>
