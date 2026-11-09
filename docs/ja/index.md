@@ -46,3 +46,8 @@ Liferay Forums をインストールするには、[インストール](installi
 <div class="doc-cards">
   <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>メンバーが探しているディスカッションの場所を教える AI チャットを追加します。検索するのは、各メンバーが閲覧できる内容だけです。ベータ版の Liferay AI Hub を使用します。</span></a>
 </div>
+
+<div class="product-spotlight">
+  <a href="https://www.liferay.co.jp/capabilities/ai-hub"><img src="../assets/images/ai-hub.png" alt="Liferay AI Hub" width="96" height="96"></a>
+  <p><strong>Liferay AI Hub で構築。</strong>Liferay AI Hub を使うと、学習して判断し、デジタルエクスペリエンスを向上させる AI エージェントを、技術的な障壁なしに展開できます。 <a href="https://www.liferay.co.jp/capabilities/ai-hub">Liferay AI Hub の詳細を見る</a></p>
+</div>

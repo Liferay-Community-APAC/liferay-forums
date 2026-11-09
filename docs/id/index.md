@@ -46,3 +46,8 @@ Resep menunjukkan langkah demi langkah cara menggabungkan Liferay Forums dengan 
 <div class="doc-cards">
   <a class="card doc" href="https://liferay-community-apac.github.io/solution-recipes/forums-ai-assistant/"><strong>Forums Assistant with AI Hub</strong><span>Tambahkan obrolan AI yang memberi tahu anggota di mana diskusi yang mereka cari, dengan hanya mencari konten yang dapat dilihat setiap anggota. Menggunakan Liferay AI Hub, yang masih beta.</span></a>
 </div>
+
+<div class="product-spotlight">
+  <a href="https://www.liferay.com/capabilities/ai-hub"><img src="../assets/images/ai-hub.png" alt="Liferay AI Hub" width="96" height="96"></a>
+  <p><strong>Dibangun dengan Liferay AI Hub.</strong> Dengan Liferay AI Hub, Anda dapat menjalankan agen AI yang belajar, mengambil keputusan, dan meningkatkan pengalaman digital Anda, tanpa hambatan teknis. <a href="https://www.liferay.com/capabilities/ai-hub">Pelajari Liferay AI Hub (dalam bahasa Inggris)</a></p>
+</div>
